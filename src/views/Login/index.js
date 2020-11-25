@@ -148,7 +148,6 @@ const styles = StyleSheet.create({
   input: {
     backgroundColor: 'white',
     marginBottom: 10,
-    fontSize:22
   },
   button: {
     backgroundColor: '#e4dfc1',
