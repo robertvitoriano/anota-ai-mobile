@@ -1,23 +1,28 @@
 import 'react-native-gesture-handler';
 import * as React from 'react';
 import {View, Text} from 'react-native';
+import { createDrawerNavigator,useIsDrawerOpen } from '@react-navigation/drawer';
+
+
 import {NavigationContainer} from '@react-navigation/native';
-import {createStackNavigator} from '@react-navigation/stack';
 import {Login, Home} from './views';
 
-const Stack = createStackNavigator();
+const Drawer= createDrawerNavigator();
 
 export default function App() {
+
+
   return (
     <NavigationContainer>
-      <Stack.Navigator
+      <Drawer.Navigator
       screenOptions={{
         headerShown: false
       }}
+      initialRouteName="Login"
       >
-        <Stack.Screen name="Anota Ai" component={Login} />
-        <Stack.Screen name="Home" component={Home} />
-      </Stack.Navigator>
+        <Drawer.Screen name="Login" component={Login}  options={{swipeEnabled:false}} />
+        <Drawer.Screen name="Home" component={Home}  />
+      </Drawer.Navigator>
     </NavigationContainer>
   );
 }

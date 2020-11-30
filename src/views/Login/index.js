@@ -7,6 +7,7 @@
  */
 
 import React, {useEffect, useState} from 'react';
+
 import {
   StyleSheet,
   View,
@@ -21,10 +22,15 @@ import loginBackground from './../../assets/login_background.png';
 import asyncStorage from '@react-native-async-storage/async-storage';
 
 const Login = ({navigation}) => {
+
   const [isKeyBoardOpen, setIsKeyBoardOpen] = useState(false);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showErrorModal, setShowErrorModal] = useState(false);
+
+
+  
+  
 
   const handleLogin = async() => {
     console.log('this is logging');
