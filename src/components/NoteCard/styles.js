@@ -1,17 +1,17 @@
-import {StyleSheet} from 'react-native';
+import {StyleSheet,Dimensions} from 'react-native';
 
 
 const  styles= StyleSheet.create({
     wrapper:{
-        width:400,
-        height:300
+        backgroundColor:"rgb(228, 208, 208)",
+        width:200,
+        height:200,
+        borderWidth:5,
+        borderColor:"#9b9686"
 
     },
-    body:{
-        backgroundColor:"brown",
-        width:200,
-        height:100
-    }
+
+
 
 
 })

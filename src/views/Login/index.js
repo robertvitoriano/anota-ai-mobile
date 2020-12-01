@@ -29,9 +29,6 @@ const Login = ({navigation}) => {
   const [showErrorModal, setShowErrorModal] = useState(false);
 
 
-  
-  
-
   const handleLogin = async() => {
     console.log('this is logging');
     try {
